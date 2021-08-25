@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    <style>
+        form{
+            margin-top: 40px;
+            margin-left: 400px;
+            margin-right: 400px;
+            margin-bottom: 0px;
+            font-size: 20px;
+            background-image: linear-gradient(#33ccff,#ff99cc);
+            border-radius: 20px;
+            border-color: black;
+            border-bottom-style: inherit;
+            
+        }
+        button{
+
+            margin-left: 230px;
+        }
+        .form-group{
+
+            margin-left:20px;
+            margin-right: 20px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-image: linear-gradient(cyan,lightpink);
+        }
+    </style>
+    <body>
+        <center>
+        <h2>WELCOME TO USED CAR PRICE PREDICTION SYSTEM</h2>
+        </center>
+        <form method='POST' action="/aftersubmit/">
+            <br>
+            <center>
+            <h3>Enter The Features Of Car</h3>
+            </center><br>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Kilometers_Driven</label>
+              <input type="text" class="form-control" name='km' id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="in Km">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Year Of model</label>
+                <input type="text" class="form-control" name='year' id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Year">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Mileage (In kmpl)</label>
+                <input type="text" class="form-control" name='kmpl' id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="in kmpl">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Engine CC</label>
+                <input type="text" class="form-control" name='cc' id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CC">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Power(in bhp)</label>
+                <input type="text" class="form-control" name='bhp' id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="In bhp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">No. of seats in car</label>
+                <input type="text" class="form-control" name='seats' id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="seats">
+            </div>
+            <button type="submit" class="btn btn-primary">Predict Price</button>
+          </form>
+    </body>
+</html>
